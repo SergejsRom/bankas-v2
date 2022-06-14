@@ -1,0 +1,12 @@
+{
+    "name": "sergejs/bankas",
+    "description": "Bankas v2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SergejsRom",
+            "email": "sergejsromanovskis@gmail.com"
+        }
+    ],
+    "require": {}
+}
