@@ -15,4 +15,13 @@ class HomeController {
             'title'=>'Home Bank', 
             'list' => $list]);
     }
+
+    public function form() {
+        return App::view('form');
+    }
+
+    public function doForm() {
+        return App::redirect('forma');
+        
+    }
 }
