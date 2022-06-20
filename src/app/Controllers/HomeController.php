@@ -2,6 +2,7 @@
 
 namespace Bankas\Controllers;
 use Bankas\App;
+use Bankas\Messages as M;
 
 class HomeController {
 
@@ -17,10 +18,12 @@ class HomeController {
     }
 
     public function form() {
-        return App::view('form');
+        return App::view('form', ['messages' => M::get()]);
     }
 
     public function doForm() {
+        M::add('Puiku', 'alert');
+        M::add($_POST['alabama'], 'success'); // duomenys is formos perduodami i message
         return App::redirect('forma');
         
     }
